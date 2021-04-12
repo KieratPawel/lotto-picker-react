@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lotto_picker_react/precache-manifest.98a06fc263d6ded1edcae2c524779bb4.js"
+  "/lotto-picker-react/precache-manifest.b52ee76b4aa9702826d1d7ce05afb8f8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/lotto_picker_react/index.html", {
+workbox.routing.registerNavigationRoute("/lotto-picker-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
