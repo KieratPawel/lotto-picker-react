@@ -7,9 +7,8 @@ const Result = (props) => {
   } else if (props.warning === "changeOfParameters") {
     return null;
   } else {
-    const balls = props.numbers.map((ball) => (
-      <Ball key={ball + Math.random()} val={ball} />
-      //random value added to key to rerender component with animation
+    const balls = props.numbers.map((ball, index) => (
+      <Ball key={"ball" + index} val={ball} />
     ));
     return <div className="result">{balls}</div>;
   }
